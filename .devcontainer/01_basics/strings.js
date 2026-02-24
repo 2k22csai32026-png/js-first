@@ -14,3 +14,10 @@ console.log(gameName.__proto__);//{}
 
 console.log(gameName.length);
 
+const subString=gameName.substring(0,1);
+console.log(subString);
+
+
+const url="https://gaurav.com/gaurav20%jaiswal";
+console.log(url.replace('20%', '-'));
+
