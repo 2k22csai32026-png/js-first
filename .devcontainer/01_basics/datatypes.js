@@ -21,4 +21,6 @@ let isLoggedIn=true
 // object 
 
 console.log(typeof"Gaurav");
+console.log(typeof undefined);//undefined
+console.log(typeof null);//object
 
