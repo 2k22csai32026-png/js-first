@@ -20,3 +20,5 @@ hello();
 
 // return tyoe of all the non premitive datatype will be 'object'
 
+// Stack(premitive=>value)  heap(non-premitive=>reference)
+
