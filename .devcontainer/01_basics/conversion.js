@@ -49,3 +49,5 @@ console.log(1+"2");
 console.log("1"+2+2);
 console.log(1+2+"2");//give the priority to the first term
 
+
+
