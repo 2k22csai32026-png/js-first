@@ -41,13 +41,23 @@ let str2=" Jaiswal"
 
 let str=str1+str2
 
-console.log(str);
+// console.log(str);
 
-console.log("1"+2);
+// console.log("1"+2);
 
-console.log(1+"2");
-console.log("1"+2+2);
-console.log(1+2+"2");//give the priority to the first term
+// console.log(1+"2");
+// console.log("1"+2+2);
+// console.log(1+2+"2");//give the priority to the first term
 
+// console.log("2">1)
+
+// console.log(null>0);
+// console.log(null==0);
+// console.log(null>=0);
+
+// comparison convert the null to a number , treated as 0.
+
+console.log("2" ==2);//convert string to number
+console.log("2" === 2);//it checks the datatype and dont do conversion
 
 
