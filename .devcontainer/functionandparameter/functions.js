@@ -23,6 +23,12 @@ function login(username){
 }
 
 const user = login()
-console.log(user);
+// console.log(user);
 
+function calcCartPrice(...num1) {//rest or spread operator
+    //wrap the arguments in one array
+    return num1
+}
+
+console.log(calcCartPrice(200,300,400));
 
