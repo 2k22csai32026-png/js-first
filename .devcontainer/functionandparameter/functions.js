@@ -30,5 +30,18 @@ function calcCartPrice(...num1) {//rest or spread operator
     return num1
 }
 
-console.log(calcCartPrice(200,300,400));
+// console.log(calcCartPrice(200,300,400));
 
+
+const usernew={
+    userName:"Gaurav",
+    price:1999
+}
+
+function handleObject(anyObject){
+    console.log(`User name is ${anyObject.userName} and price is ${anyObject.price}`);
+    
+
+}
+
+handleObject(usernew)
