@@ -30,3 +30,22 @@ const obj3=Object.assign({},obj1,obj2)
 
 console.log(obj3);
 
+// array of object
+
+user=[
+    {
+        1:"a"
+    },
+    {
+        2:"b"
+    },
+    {
+        3:"c"
+    }
+]
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+
+console.log(tinderUser.hasOwnProperty('id'));//if the property present in the object
+
