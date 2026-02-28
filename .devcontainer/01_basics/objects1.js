@@ -5,7 +5,7 @@
 
 const mySym = Symbol("Key1")//declaring a symbol
 
-
+//non singleton object
 const user={
     name:"Gaurav",
     "full name":"Gaurav Jaiswal",
