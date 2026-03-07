@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLang(lang){
+        const li = document.createElement('li')
+        li.innerHTML=`${lang}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addLang('python')
+    addLang('Java')
+
+    function optiway(lang1){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang1))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    optiway('HTML')
+    optiway('CSS')
+
+    //edit
+    const second=document.querySelector('li:nth-child(2)')
+    const newList=document.createElement('li')
+    newList.textContent="Mojo"
+    second.replaceWith(newList)
+
+</script>
+</html>
