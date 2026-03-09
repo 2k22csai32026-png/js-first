@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: aqua; color: blue;">
+    <h2 style="margin: auto; text-align: center;">Amazing Images!</h2>
+    <ul id="images" >
+        <li><img id="mountain" width="200px" src="https://images.pexels.com/photos/2734424/pexels-photo-2734424.jpeg" alt="photoshop"></li>
+        <li><img id="building" width="200px" src="https://images.pexels.com/photos/34780944/pexels-photo-34780944.jpeg" alt="img"></li>
+        <li><img id="girl" width="200px" src="https://images.pexels.com/photos/36211085/pexels-photo-36211085.jpeg" alt="img" ></li>
+        <li><img id="tower" width="200px" src="https://images.pexels.com/photos/36267749/pexels-photo-36267749.jpeg" alt="img"></li>
+        <li><img id="city" width="200px" src="https://images.pexels.com/photos/36176552/pexels-photo-36176552.jpeg" alt="img"></li>
+        <li><a id="google" href="https://www.bing.com/search?qs=SC&pq=www%2c&sk=CSYN1SC5&sc=16-4&q=www.google.com+search&cvid=471f819d240e4e54aedae8270b512ca0&gs_lcrp=EgRlZGdlKgYIAhAAGEAyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEEUYQTIGCAcQRRhBMgYICBBFGEHSAQg0MDAwajBqOagCCLACAQ&FORM=ANAB01&PC=DCTS">Google</a></li>
+    </ul>
+
+</body>
+<script>
+    // document.getElementById('girl').onclick=function(){
+    //     alert('owl clicked')
+    // }
+    //attatchEvent()=>
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log('clicked inside ul');
+        
+    // },false)
+
+    // document.getElementById('girl').addEventListener('click',function(e){
+    //     console.log('clicked on girl');
+    //     e.stopPropagation()
+    // },false)
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault()
+    //     console.log('clicked in link');
+        
+    // })
+
+    //type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget
+    //clintX, clintY, screenX, screenY
+    //altKey, ctrlKey, shiftKey, keyCode
+
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        // console.log(e.target.parentNode);
+        console.log(e.target.tagName);
+        if(e.target.tagName==='IMG'){
+            console.log(e.target.id);
+            
+            let removeIt=e.target.parentNode
+            removeIt.remove()
+        }
+
+    })
+
+    
+</script>
+</html>
